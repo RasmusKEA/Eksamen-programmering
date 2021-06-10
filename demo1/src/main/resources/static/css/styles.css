@@ -1,0 +1,61 @@
+.addBtn{
+    color: #20bf6b !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 20px;
+    border: 3px solid #20bf6b !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.addBtn:hover, .deleteBtn:hover{
+    color: #494949 !important;
+    background-color: transparent;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+}
+
+.deleteBtn{
+    border: 2px solid #20bf6b !important;
+    color: #20bf6b;
+    background-color: transparent;
+    transition-duration: 0.5s;
+    text-align: center;
+    width: 150px;
+}
+
+.updateBtn{
+    margin-bottom: 5px !important;
+}
+
+
+.sognElement, .kommuneElement{
+    width: 200px;
+    max-width: 200px;
+    height: 250px;
+    max-height: 250px;
+    text-align: center;
+    margin: 10px;
+    border: 3px solid #20bf6b;
+    border-radius: 5px;
+}
+
+.sognDiv, .kommuneDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 880px;
+}
+
+p{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.infoDiv{
+    margin: auto auto 10px auto;
+}
+

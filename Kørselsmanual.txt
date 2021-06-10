@@ -1,0 +1,11 @@
+For at køre programmet skal du følgende:
+
+Oprette et schema i MySQL som hedder "eksamen"
+
+Herefter skal du ændre IP'en til din MySQL database i application.properties filen
+Efterfølgende skal brugernavn og kodeord til din MySQL forbindelse ændres til dit login.
+
+Når du kører programmet:
+Kan du tilføje sogne, redigerer i tilføjede sogne og slette sogne.
+Indtaster du en af de 11 kommuner, som eksisterer i databasen, når du laver et sogn kan du se det samlede antal smittede pr. 100.000 indbyggere i de kommuner. 
+

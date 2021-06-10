@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <title>Sogn</title>
+</head>
+<body>
+
+<div class="buttonDiv" align="center">
+    <button class="addBtn" id="addBtn" data-bs-toggle="modal" data-bs-target="#addModal">Tilføj sogn</button>
+    <button class="addBtn" id="kommuneBtn" onclick="redirectKommuner()">Se kommuner</button>
+</div>
+
+<!-- Bootstrap 5 Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tilføj sogn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="Sognekode" id="sognekode">
+                <input type="text" placeholder="Navn på sogn" id="sognNavn">
+                <input type="text" placeholder="Kommune" id="Kommune">
+                <input type="text" placeholder="Smittetryk" id="Smittetryk">
+                <br>
+                <label>Nedlukket?</label>
+                <input type="checkbox" id="checkboxAdd" onclick="checkboxFunc()">
+                <br>
+                <label id="whenLocked">Hvornår nedlukkes der fra?</label>
+                <input type="date" placeholder="Start på nedlukning" id="nedlukning">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="addSogn()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap 5 Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tilføj sogn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="Sognekode" id="editSognekode">
+                <input type="text" placeholder="Navn på sogn" id="editSognNavn">
+                <input type="text" placeholder="Kommune" id="editKommune">
+                <input type="text" placeholder="Smittetryk" id="editSmittetryk">
+                <br>
+                <label>Nedlukket?</label>
+                <input type="checkbox" id="checkboxEdit" onclick="checkboxFuncEdit()">
+                <br>
+                <label id="whenLockedEdit">Hvornår nedlukkes der fra?</label>
+                <input type="date" placeholder="Start på nedlukning" id="editNedlukning">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="editSognBtn">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container sognDiv">
+    <div class="row" id="sognRow" >
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/load.js"></script>
+<script type="text/javascript" src="js/add.js"></script>
+
+</html>
